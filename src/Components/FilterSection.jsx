@@ -11,11 +11,11 @@ function FilterSection({
       <input
         type="text"
         placeholder="Search.."
-        className="w-1/3"
+        className="w-[250px] p-1 rounded-md"
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
       />
-      <label>
+      <label className="flex justify-center gap-2">
         <input
           type="checkbox"
           checked={onlyStocked}

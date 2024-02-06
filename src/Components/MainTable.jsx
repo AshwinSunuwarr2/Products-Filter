@@ -17,7 +17,7 @@ function MainTable() {
   const [searchText, setSearchText] = useState("");
 
   return (
-    <div>
+    <div className="flex flex-col gap-8 items-center min-w-full">
       <FilterSection
         searchText={searchText}
         setSearchText={setSearchText}

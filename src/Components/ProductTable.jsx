@@ -15,6 +15,7 @@ function ProductTable({ products, onlyStocked, searchText }) {
       if (onlyStocked && !product.stocked) {
         return;
       }
+
       if (product.category !== lastCategory) {
         rows.push(
           <ProductCategory category={product.category} key={product.name} />
@@ -26,9 +27,9 @@ function ProductTable({ products, onlyStocked, searchText }) {
   }
   return (
     <div>
-      <table>
+      <table className="flex flex-col">
         <thead>
-          <tr>
+          <tr className="flex justify-between">
             <th>Name</th>
             <th>price</th>
           </tr>
